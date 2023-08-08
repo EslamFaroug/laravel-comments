@@ -77,6 +77,14 @@ From the command line:
 composer require eslamfaroug/laravel_comments
 ```
 
+### Publish Config & configure (optional)
+
+Publish files :
+
+```bash
+php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider"
+```
+
 
 ### Run migrations
 
@@ -112,42 +120,6 @@ class Product extends Model
 {
     use Commentable;
 }
-```
-
-
-### Publish Config & configure (optional)
-
-Publish the config file (optional):
-
-```bash
-php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=config
-```
-
-
-### Publish views (customization)
-
-The default UI is made for Bootstrap 4, but you can change it however you want.
-
-```bash
-php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=views
-```
-
-
-### Publish Migrations (customization)
-
-You can publish migration to allow you to have more control over your table
-
-```bash
-php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=migrations
-```
-
-
-### Publish translations (customization)
-
-The package currently only supports English, but I am open to PRs for other languages.
-
-```bash
-php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=translations
 ```
 
 
