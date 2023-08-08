@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace EslamFaroug\LaravelComments;
 
 use Illuminate\Http\Request;
 

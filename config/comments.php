@@ -7,26 +7,26 @@ return [
      * CustomComment model extending the Comment model shipped with the
      * package and change this configuration option to their extended model.
      */
-    'model' => \Laravelista\Comments\Comment::class,
+    'model' => \EslamFaroug\LaravelComments\Comment::class,
 
     /**
      * You can customize the behaviour of these permissions by
      * creating your own and pointing to it here.
      */
     'permissions' => [
-        'create-comment' => 'Laravelista\Comments\CommentPolicy@create',
-        'delete-comment' => 'Laravelista\Comments\CommentPolicy@delete',
-        'edit-comment' => 'Laravelista\Comments\CommentPolicy@update',
-        'reply-to-comment' => 'Laravelista\Comments\CommentPolicy@reply',
+        'create-comment' => 'EslamFaroug\LaravelComments\CommentPolicy@create',
+        'delete-comment' => 'EslamFaroug\LaravelComments\CommentPolicy@delete',
+        'edit-comment' => 'EslamFaroug\LaravelComments\CommentPolicy@update',
+        'reply-to-comment' => 'EslamFaroug\LaravelComments\CommentPolicy@reply',
     ],
 
     /**
      * The Comment Controller.
      * Change this to your own implementation of the CommentController.
-     * You can use the \Laravelista\Comments\CommentControllerInterface
-     * or extend the \Laravelista\Comments\CommentController.
+     * You can use the \EslamFaroug\LaravelComments\CommentControllerInterface
+     * or extend the \EslamFaroug\LaravelComments\CommentController.
      */
-    'controller' => '\Laravelista\Comments\WebCommentController',
+    'controller' => '\EslamFaroug\LaravelComments\WebCommentController',
 
     /**
      * Disable/enable the package routes.
@@ -63,7 +63,7 @@ return [
 	/**
      * Set this option to `true` to enable soft deleting of comments.
      *
-     * Comments will be soft deleted using laravels "softDeletes" trait.
+     * LaravelComments will be soft deleted using laravels "softDeletes" trait.
      */
     'soft_deletes' => false,
 

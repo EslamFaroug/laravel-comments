@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace EslamFaroug\LaravelComments;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Config;

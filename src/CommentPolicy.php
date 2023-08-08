@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace EslamFaroug\LaravelComments;
 
-use Laravelista\Comments\Comment;
+use EslamFaroug\LaravelComments\Comment;
 
 class CommentPolicy
 {

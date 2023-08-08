@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace EslamFaroug\LaravelComments;
 
 use Illuminate\Support\Facades\Config;
 
@@ -21,7 +21,7 @@ trait Commenter
     /**
      * Returns only approved comments that this user has made.
      */
-    public function approvedComments()
+    public function approvedLaravelComments()
     {
         return $this->morphMany(Config::get('comments.model'), 'commenter')->where('approved', true);
     }

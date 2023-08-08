@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace EslamFaroug\LaravelComments;
 
 use Illuminate\Database\Eloquent\Model;
-use Laravelista\Comments\Events\CommentCreated;
-use Laravelista\Comments\Events\CommentUpdated;
-use Laravelista\Comments\Events\CommentDeleted;
+use EslamFaroug\LaravelComments\Events\CommentCreated;
+use EslamFaroug\LaravelComments\Events\CommentUpdated;
+use EslamFaroug\LaravelComments\Events\CommentDeleted;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Config;
 

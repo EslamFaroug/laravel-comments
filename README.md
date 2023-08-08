@@ -1,6 +1,6 @@
-# Comments
+# LaravelComments
 
-Comments is a Laravel package. With it you can easily implement native comments for your application.
+LaravelComments is a Laravel package. With it you can easily implement native comments for your application.
 
 [![Become a Patron](https://img.shields.io/badge/Become%20a-Patron-f96854.svg?style=for-the-badge)](https://www.patreon.com/laravelista)
 
@@ -92,7 +92,7 @@ php artisan migrate
 Add the `Commenter` trait to your User model so that you can retrieve the comments for a user:
 
 ```php
-use Laravelista\Comments\Commenter;
+use EslamFaroug\LaravelComments\Commenter;
 
 class User extends Authenticatable
 {
@@ -106,7 +106,7 @@ class User extends Authenticatable
 Add the `Commentable` trait to the model for which you want to enable comments for:
 
 ```php
-use Laravelista\Comments\Commentable;
+use EslamFaroug\LaravelComments\Commentable;
 
 class Product extends Model
 {
@@ -120,7 +120,7 @@ class Product extends Model
 Publish the config file (optional):
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=config
+php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=config
 ```
 
 
@@ -129,7 +129,7 @@ php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --t
 The default UI is made for Bootstrap 4, but you can change it however you want.
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=views
+php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=views
 ```
 
 
@@ -138,7 +138,7 @@ php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --t
 You can publish migration to allow you to have more control over your table
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=migrations
+php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=migrations
 ```
 
 
@@ -147,7 +147,7 @@ php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --t
 The package currently only supports English, but I am open to PRs for other languages.
 
 ```bash
-php artisan vendor:publish --provider="Laravelista\Comments\ServiceProvider" --tag=translations
+php artisan vendor:publish --provider="EslamFaroug\LaravelComments\ServiceProvider" --tag=translations
 ```
 
 
@@ -218,9 +218,9 @@ You can configure the maximum indentation level like so:
 
 This package fires events to let you know when things happen.
 
-- `Laravelista\Comments\Events\CommentCreated`
-- `Laravelista\Comments\Events\CommentUpdated`
-- `Laravelista\Comments\Events\CommentDeleted`
+- `EslamFaroug\LaravelComments\Events\CommentCreated`
+- `EslamFaroug\LaravelComments\Events\CommentUpdated`
+- `EslamFaroug\LaravelComments\Events\CommentDeleted`
 
 
 ## REST API
@@ -228,10 +228,10 @@ This package fires events to let you know when things happen.
 To change the controller or the routes, see the config.
 
 ```
-Route::post('comments', '\Laravelista\Comments\CommentController@store')->name('comments.store');
-Route::delete('comments/{comment}', '\Laravelista\Comments\CommentController@destroy')->name('comments.destroy');
-Route::put('comments/{comment}', '\Laravelista\Comments\CommentController@update')->name('comments.update');
-Route::post('comments/{comment}', '\Laravelista\Comments\CommentController@reply')->name('comments.reply');
+Route::post('comments', '\EslamFaroug\LaravelComments\CommentController@store')->name('comments.store');
+Route::delete('comments/{comment}', '\EslamFaroug\LaravelComments\CommentController@destroy')->name('comments.destroy');
+Route::put('comments/{comment}', '\EslamFaroug\LaravelComments\CommentController@update')->name('comments.update');
+Route::post('comments/{comment}', '\EslamFaroug\LaravelComments\CommentController@reply')->name('comments.reply');
 ```
 
 
@@ -280,7 +280,7 @@ I would like to extend my thanks to the following sponsors & backers for funding
 
 ## Contributing
 
-Thank you for considering contributing to Comments! The contribution guide can be found [Here](https://mariobasic.com/contributing).
+Thank you for considering contributing to LaravelComments! The contribution guide can be found [Here](https://mariobasic.com/contributing).
 
 
 ## Code of Conduct
@@ -290,4 +290,4 @@ In order to ensure that the open-source community is welcoming to all, please re
 
 ## License
 
-Comments is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+LaravelComments is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

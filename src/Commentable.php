@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravelista\Comments;
+namespace EslamFaroug\LaravelComments;
 
 use Illuminate\Support\Facades\Config;
 
@@ -35,7 +35,7 @@ trait Commentable
     /**
      * Returns only approved comments for this model.
      */
-    public function approvedComments()
+    public function approvedLaravelComments()
     {
         return $this->morphMany(Config::get('comments.model'), 'commentable')->where('approved', true);
     }
