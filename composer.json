@@ -23,5 +23,12 @@
         {
             "name": "Eslam Faroug"
         }
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/eslamfaroug/laravel_comments"
+        }
     ]
 }
