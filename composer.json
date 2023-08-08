@@ -2,6 +2,7 @@
     "name": "eslamfaroug/laravel_comments",
     "description": "Using this package, you can create comments and associate them with Eloquent models.",
     "type": "library",
+    "minimum-stability": "stable",
     "require": {
         "illuminate/database": "^10.17",
         "erusev/parsedown": "^1.7",
