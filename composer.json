@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Eslamfaroug\\LaravelLaravelComments\\": "src/"
+            "EslamFaroug\\LaravelComments\\": "src/"
         }
     },
     "authors": [
